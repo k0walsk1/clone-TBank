@@ -1,19 +1,27 @@
 @font-face {
     font-family: 'tinkoff-sans';
     src: url('/tinkoff-sans_font/TinkoffSans-Medium.woff2') format('woff2'),
-    url('/tinkoff-sans_font/TinkoffSans-Regular.woff2') format('woff2'),
-    url('/tinkoff-sans_font/TinkoffSans-Bold.woff2') format('woff2');
-    
+        url('/tinkoff-sans_font/TinkoffSans-Regular.woff2') format('woff2'),
+        url('/tinkoff-sans_font/TinkoffSans-Bold.woff2') format('woff2');
+
     font-weight: 100 900;
     font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'tinkoff-sans', sans-serif;
 }
 
+ol,
+ul {
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
 
 /* START header */
 header h1 {
@@ -35,8 +43,195 @@ header h1 {
     padding: 64px 0 32px;
 }
 
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-section_left {
+    width: 336px;
+}
+
+.section-left_list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_list-items {
+    border-radius: 24px;
+    box-shadow: var(--tui-surface-shadow);
+    --tui-surface-shadow: var(--tui-shadow-medium, 0px 6px 34px 0px #0000001f);
+    background-color: var(--tui-background-elevation-1, #fff);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.independent-homer-debit-widget,
+.independent-homer-product-widget-slot,
+.widget-savings,
+.widget-invest,
+.widget-investbox {
+    display: flex;
+}
+
+.coast-block {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--tui-text-primary, #000c);
+}
+
+.coast-block__balanse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.leaft-item {
+    margin-right: 0px;
+}
+
+.balanse__my-money p {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.tui_homer {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+    flex-shrink: 1;
+    margin-left: 8px;
+    z-index: 1;
+    height: 20px;
+    min-width: 20px;
+    padding: 0 4px;
+    color: #fff;
+    background: linear-gradient(45deg, #333333 0%, #5c5c5c 100%);
+    border-radius: 50px;
+}
+
+.tui_sevings {
+    height: 20px;
+    min-width: 20px;
+    padding: 2px 6px;
+    color: #00a328;
+    background-color: #00a32946;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.tui_sevings p {
+    font-size: 12px;
+}
+
+.tui_invest {
+    color: #f52222;
+    background: #f522223c;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    min-width: 20px;
+    padding: 2px 6px;
+}
+
+.tui_homer>img {
+    width: 12px;
+    height: 12px;
+    color: #fff;
+
+}
+
+.all-icons_items {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.by-simcard {
+    border-radius: 24px;
+    box-shadow: var(--tui-surface-shadow);
+    --tui-surface-shadow: var(--tui-shadow-medium, 0px 6px 34px 0px #0000001f);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: linear-gradient(267deg, rgb(141, 128, 227) 0%, rgb(60, 44, 165) 100%);
+}
+
+.by-simcard__wrapper {
+    padding-right: 135px;
+    color: #fff;
+}
+
+.by-simcard__wrapper p {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.by-simcard__img {
+    height: 111px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: -66px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50px;
+    background: #00000034;
+    width: 21px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.close-btn img {
+    width: 10px;
+}
+
+.account-subtitle__text {
+    color: var(--tui-text-primary, #000c);
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 16px;
+    margin-top: 4px;
+    position: relative;
+    text-overflow: clip;
+}
+
+.coast-block__my-cards img {
+    width: 48px;
+    height: 32px;
+}
+
+.primary {
+    background: #ffcd33;
+    color: #000;
+    align-items: center;
+    border-radius: inherit;
+    box-sizing: border-box;
+    display: flex;
+    height: 45px;
+    border-radius: 5px;
+    justify-content: center;
+    min-height: var(--tui-button-min-height);
+    padding: var(--tui-button-padding);
+    position: relative;
+    width: 100%;
+}
 
 
 /* END MAIN */

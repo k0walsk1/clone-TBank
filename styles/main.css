@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'tinkoff-sans';
+    src: url('/tinkoff-sans_font/TinkoffSans-Medium.woff2') format('woff2'),
+    url('/tinkoff-sans_font/TinkoffSans-Regular.woff2') format('woff2'),
+    url('/tinkoff-sans_font/TinkoffSans-Bold.woff2') format('woff2');
+    
+    font-weight: 100 900;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tinkoff-sans', sans-serif;
+}
+
+
+
+/* START header */
+header h1 {
+    color: #b01f1f;
+}
+
+/* END header */
+
+/* START MAIN */
+.main {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: 300;
+    color: #000000cc;
+    padding: 64px 0 32px;
+}
+
+
+
+
+
+/* END MAIN */
+
+/* START footer */
+footer {
+    margin-top: auto;
+    max-width: 1100px;
+    padding-top: 88px;
+}
+
+/* END footer */

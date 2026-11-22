@@ -25,9 +25,31 @@
 
 <body>
     <!-- START header -->
-    <header>
-        <h1>Welcome to TBank</h1>
+
+    <!-- START header -->
+    <header class="main-header">
+        <div class="header-container">
+
+            <nav class="header-nav">
+                <a href="#" class="header-link active-nav_link">Главная</a>
+                <a href="#" class="header-link">Операции</a>
+                <a href="#" class="header-link">Платежи</a>
+                <a href="#" class="header-link">Бонусы</a>
+                <a href="#" class="header-link">Город</a>
+                <a href="#" class="header-link">Еще</a>
+            </nav>
+
+
+            <a href="/profile/" class="header-profile">
+                <span class="profile-name">Андрей</span>
+                <img class="profile-avatar" src="/images/icons/profile.png" alt="Профиль">
+            </a>
+
+
+        </div>
     </header>
+    <!-- END header -->
+
     <!-- END header -->
 
     <!-- START MAIN -->
@@ -139,21 +161,93 @@
                 </ul>
                 <a class="primary" href="/new-product/">Новый счет или продукт</a>
             </div>
-            <div class="">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+            <div class="main-container-section_rigth">
+                <div class="section_right-search">
+                    <!-- поиск -->
+                    <img class="search_icon" src="/images/icons/search.png" alt="Поиск">
+
+                    <input class="input_search" type="search" placeholder="Поиск" aria-label="Поиск по сайту">
+                </div>
+                <ul class="payment-methods">
+                    <!-- Способы оплаты -->
+                    <li class="rigth_list-items">
+                        <img src="/images/icons/phone.png" alt="иконка перевода по номеру" class="list-items__iron">
+                        <p class="list-items__text">Перевести по телефону</p>
+                    </li>
+                    <li class="rigth_list-items">
+                        <img src="/images/icons/requisites.png" alt="иконка перевода по реквизитам"
+                            class="list-items__iron">
+                        <p class="list-items__text">Перевести по реквизитам</p>
+                    </li>
+                    <li class="rigth_list-items">
+                        <img src="/images/icons/iphone.png" alt="икконка оплаты мобсвязи" class="list-items__iron">
+                        <p class="list-items__text">Опталить мобильный</p>
+                    </li>
+                    <li class="rigth_list-items">
+                        <img src="/images/icons/qr.png" alt="иконка qr" class="list-items__iron">
+                        <p class="list-items__text">Распознать квтианцию</p>
+                    </li>
+                </ul>
+                <div class="cashback-bonuses">
+                    <!-- Кэшбек и бонусы -->
+                    <div class="cashback-bonuses_top">
+                        <h2 class="cashback-bonuses_top-title">
+                            Кэшбек и бонусы
+                        </h2>
+                        <a href="#" class="cashback-bonuses_top-link">Все предложения</a>
+                    </div>
+                    <div class="exemple-bonuses">
+                        <div class="exemple-bonuses_first ">
+                            <h4 class="exemple-bonuses_title">Пятёрочка Доставка</h4>
+                            <p class="exemple-bonuses_text">Кэшбек 50%</p>
+                            <img class="exemple-bonuses_logo"
+                                src="https://imgproxy.cdn-tinkoff.ru/zoom_05:compressed95/aHR0cHM6Ly9tcy1zdGF0aWMtaW1hZ2VzLnQtc3RhdGljLnJ1L3BhcnRuZXItMTUxMjEtaW1hZ2UyODAtNDM4MTA2ODgucG5n"
+                                alt="иконка 5рочки">
+                            <img class="exemple-bonuses_bg"
+                                src="https://imgproxy.cdn-tinkoff.ru/zoom_05:compressed95/aHR0cHM6Ly9tcy1zdGF0aWMtaW1hZ2VzLnQtc3RhdGljLnJ1L3BhcnRuZXItaW1hZ2UxMjUyLWQ5YjE1ZTliYWM3YjQ1NmU4OWEyZGE0OGMxYWIyNjdiLnBuZw=="
+                                alt="фон предложения">
+                        </div>
+                        <div class="exemple-bonuses_second">
+                            <h4 class="exemple-bonuses_title">Яндекс Лавка</h4>
+                            <p class="exemple-bonuses_text">Кэшбек 33%</p>
+                            <img class="exemple-bonuses_logo"
+                                src="https://imgproxy.cdn-tinkoff.ru/zoom_05:compressed95/aHR0cHM6Ly9tcy1zdGF0aWMtaW1hZ2VzLnQtc3RhdGljLnJ1L3BhcnRuZXItMTE1ODktaW1hZ2UyODAtMjZlYjk2MDYucG5n"
+                                alt="иконка Ялавки">
+                            <img class="exemple-bonuses_bg"
+                                src="https://imgproxy.cdn-tinkoff.ru/zoom_05:compressed95/aHR0cHM6Ly9tcy1zdGF0aWMtaW1hZ2VzLnQtc3RhdGljLnJ1L29mZmVyLWltYWdlMTI1Mi02NGZhNTM5ZTgwODE0ZjExYjFlOWMzOTE4MGI4MWQ3OC5wbmc="
+                                alt="фон предложения">
+                        </div>
+                    </div>
+                </div>
+                <div class="operations-month">
+                    <!-- Операции в месяце -->
+                    <div class="">
+                        <a href="">
+                            <h2 class="operations-month_title">
+                                Операции в 'месяце'
+                            </h2>
+                        </a>
+                        <div class="operations-month_categoris">
+                            <button class="categori-btn active">
+                                Траты
+                            </button>
+                            <button class="categori-btn ">
+                                Поплнения
+                            </button>
+                        </div>
+                        <div class="">
+                            <!-- категории трат -->
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- диаграмма трат -->
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <!-- END MAIN -->
-
-    <!-- START footer -->
-    <footer>
-        <p>&copy; 2023 TBank. All rights reserved.</p>
-    </footer>
-    <!-- END footer -->
 </body>
 
 </html>

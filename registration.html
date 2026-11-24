@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Fintech</title>
+    <link rel="stylesheet" href="/styles/registration.css">
+</head>
+<body>
+
+    <main class="registration-page">
+
+        <section class="registration-card">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">F</span>
+                <span>fintech</span>
+            </a>
+
+            <div class="registration-header">
+                <h1>Создать аккаунт</h1>
+                <p>Заполните данные, чтобы начать пользоваться Fintech</p>
+            </div>
+
+            <form class="registration-form" id="registrationForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="firstName">Имя</label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Введите имя"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Фамилия</label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Введите фамилию"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефона</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+371 20000000"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Минимум 8 символов"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Повторите пароль</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Повторите пароль"
+                        autocomplete="new-password"
+                        required
+                    >
+                </div>
+
+                <div class="form-checkbox">
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+                    <label for="terms">
+                        Я принимаю условия использования сервиса
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Зарегистрироваться
+                </button>
+
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+            </form>
+
+            <div class="registration-footer">
+                Уже есть аккаунт?
+                <a href="login.html">Войти</a>
+            </div>
+
+        </section>
+
+        <div class="page-description">
+            <h2>Управляйте финансами проще</h2>
+            <p>
+                Все ваши счета, переводы и финансовая аналитика
+                в одном удобном пространстве.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- toast -->
+    <div class="popup" id="popup"></div>
+
+    
+    <script src="/scripts/register.js"></script>
+</body>
+</html>

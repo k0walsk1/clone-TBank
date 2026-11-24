@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "firstName": "Andrey",
+      "lastName": "Anisimov",
+      "phone": "+79913062042",
+      "password": "8xP-mGS-XQa-bqk",
+      "terms": true,
+      "id": "mJr8d2uvdZ8"
+    },
+    {
+      "firstName": "Володя",
+      "lastName": "Anisimov",
+      "phone": "+79180916290",
+      "password": "8xP-mGS-XQa-bqk",
+      "terms": true,
+      "id": "NZruWuoFnv8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
